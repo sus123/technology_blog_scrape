@@ -1,3 +1,3 @@
 from scrapy import cmdline
 
-cmdline.execute("scrapy crawl uberblogspider -o output/uberblogspider.csv".split())
+cmdline.execute("scrapy crawl apablogspider -o output/apablogspider.csv".split())
