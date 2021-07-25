@@ -8,5 +8,9 @@ import scrapy
 
 class UberblogItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+
+
+class ApablogItem(scrapy.Item):
+    # define the fields for your item here like:
+    title = scrapy.Field()
