@@ -1,3 +1,3 @@
 from scrapy import cmdline
 
-cmdline.execute("scrapy crawl gitblogspider -o output/gitblogspider.csv".split())
+cmdline.execute("scrapy crawl whatsappblogspider -o output/whatsappblogspider.csv".split())
