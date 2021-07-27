@@ -6,8 +6,9 @@ from uberblog.items import UberblogItem
 
 class GoogleDevBlogSpider(scrapy.Spider):
     name = 'googledevblogspider'
-    allowed_domains = ['developers.googleblog.com']
+    allowed_domains = ['googleblog.com']
     start_urls = ['https://developers.googleblog.com/']
+    custom_settings = {'ROBOTSTXT_OBEY': False}
 
     def parse(self, response, **kwargs):
         for title_selector in response.css('.title > a'):  # [a:first , a:second]

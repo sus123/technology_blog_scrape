@@ -6,7 +6,7 @@ from uberblog.items import UberblogItem
 
 class WhatsappBlogSpider(scrapy.Spider):
     name = 'whatsappblogspider'
-    allowed_domains = ['blog.whatsapp.com']
+    allowed_domains = ['whatsapp.com']
     start_urls = ['https://blog.whatsapp.com/?lang=en']
 
     def parse(self, response, **kwargs):
